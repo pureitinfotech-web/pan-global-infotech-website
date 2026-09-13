@@ -1402,6 +1402,33 @@ h1, h2, h3, h4, h5, h6 {
 .loc-text p {
   color: var(--text-muted);
   font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.google-rating-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-main);
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.google-rating-badge:hover {
+  background: #ffffff;
+  border-color: var(--border-active);
+  transform: translateY(-1px);
+}
+
+.loc-action {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 /* ----------------- Footer ----------------- */
