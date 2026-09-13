@@ -3,6 +3,16 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  // 0. Init AOS (Animate On Scroll) library
+  if (typeof AOS !== 'undefined') {
+    AOS.init({
+      duration: 700,
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 60
+    });
+  }
+
   // 1. Footer Year
   const currentYearSpan = document.getElementById('currentYear');
   if (currentYearSpan) {
